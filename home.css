@@ -170,6 +170,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-bottom: 10px;
 }
 
 .collection{
@@ -193,7 +194,3 @@
     text-transform: capitalize;
 }
 
-.collection:nth-child(3){
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
