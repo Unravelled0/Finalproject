@@ -150,12 +150,12 @@
 }
 
 .pre-btn{
-    left: 0;
+    left: 40px;
     transform: rotate(180deg);
 }
 
 .nxt-btn{
-    right: 0;
+    right: 40px;
 }
 
 .pre-btn img, .nxt-btn img{

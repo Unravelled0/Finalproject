@@ -9,8 +9,8 @@ const createNav = () => {
                     <input type="text" class="search-box" placeholder="search brand, product">
                     <button class="search-btn">search</button>
                 </div>
-                <a href="#"><img src="photos/userlogo.png" alt=""></a>
-                <a href="#"><img src="photos/shopping.png" alt=""></a>
+                <a href="#"><img src="photos/user.png" alt=""></a>
+                <a href="#"><img src="photos/cart.png" alt=""></a>
             </div>
         </div>
         <ul class="links-container">
