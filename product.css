@@ -84,7 +84,7 @@
     font-weight: 300;
 }
 
-.size-radio-btn{
+.quantity-radio-btn{
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -100,7 +100,7 @@
     cursor: pointer;
 }
 
-.size-radio-btn.check{
+.quantity-radio-btn.check{
     background: #383838;
     color: #fff;
 }
