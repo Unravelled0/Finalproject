@@ -2,15 +2,20 @@ const express = require('express');
 const admin = require('firebase-admin');
 const bcrypt = require('bcrypt');
 const path = require('path');
-let staticPath = path.join(__dirname, "public");
+
+let staticPath = path.join(__dirname,"public");
+
 const app = express();
-
-
 app.use(express.static(staticPath));
-app.get("/", (req, res) => {
-    res.sendFile(path.join(staticPath, "index.html"));
-})
 
-app.listen(3000, () => {
-    console.log('listening on port 3000.......');
-})
+app.get("/",(req,res)=>{
+    res.sendFile(path.join(staticPath,"index.html"));
+});
+
+app.get("/signup", (req, res) => {
+    res.sendFile(path.join(staticPath, "signup.html"));
+});
+
+app.listen(3000,()=>{
+    console.log('listening on port 3000');
+});
