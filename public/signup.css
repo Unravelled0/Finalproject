@@ -1,4 +1,15 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
 
 body{
     width: 100%;
@@ -80,7 +91,7 @@ textarea{
     width: 80%;
     height: 100%;
     pointer-events: none;
-    background-image: url(../img/check.png);
+    background-image: url(../photos/check.png);
     background-size: contain;
     background-repeat: no-repeat;
     display: none;
@@ -107,4 +118,40 @@ label a{
     text-transform: capitalize;
     text-align: center;
     display: block;
+}
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+
+.alert-msg{
+    color: #e24c4b;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
 }
