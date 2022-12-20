@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <div class="alert-box">
+        <img src="photos/alert.png" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <div class="container">
+        <img src="photos/logo.png" class="logo" alt="">
+        <div>
+            <input type="email" autocomplete="off" id="email" placeholder="email">
+            <input type="password" autocomplete="off" id="password" placeholder="password">
+            <button class="submit-btn">Log In</button>
+        </div>
+        <a href="/signup" class="link">Don't have an account? Sign up here</a>
+    </div>
+
+    <script src="form.js"></script>
+    <script src="token.js"></script>
 </body>
 </html>
