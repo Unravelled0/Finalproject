@@ -9,7 +9,13 @@ const createNav = () => {
                     <input type="text" class="search-box" placeholder="search brand, product">
                     <button class="search-btn">search</button>
                 </div>
-                <a href="#"><img src="photos/user.png" alt=""></a>
+                <a>
+                    <img src="photos/user.png" alt="">
+                    <div class="login-logout-popup">
+                    <p class="account-info">Log in as,name</p>
+                    <button class="btn" id="user-btn">Log out</button>
+                    </div>
+                </a>
                 <a href="#"><img src="photos/cart.png" alt=""></a>
             </div>
         </div>

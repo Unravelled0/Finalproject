@@ -10,6 +10,12 @@
     justify-content: center;
     align-items: center;
 }
+.webp{
+    margin-left: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: skyblue;
+}
 
 .hero-section .icon{
     height: 150px;
