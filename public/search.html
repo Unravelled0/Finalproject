@@ -7,82 +7,35 @@
      <footer></footer>
      <section class="search-results">
         <h2 class="heading">search results for <span>product</span></h2>
-        <div class="product-container">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">50% off</span>
-                    <img src="photos/im1.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Glitter Pens</h2>
-                    <p class="product-short-des">Satisfying and practical</p>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
-                </div>
+        <div class="wrapper">
+            <div id="search-container">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search product name here.."
+              />
+              <button id="search">Search</button>
             </div>
-            <!-- +7 more cards -->
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">50% off</span>
-                    <img src="photos/im2.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brushes</h2>
-                    <p class="product-short-des">Strong absobtion ability</p>
-                    <span class="price">$30</span><span class="actual-price">$60</span>
-                </div>
+            <div id="buttons">
+              <button class="button-value" onclick="filterProduct('all')">All</button>
+              <!-- <button class="button-value" onclick="filterProduct('Topwear')">
+                Topwear
+              </button>
+              <button class="button-value" onclick="filterProduct('Bottomwear')">
+                Bottomwear
+              </button>
+              <button class="button-value" onclick="filterProduct('Jacket')">
+                Jacket
+              </button>
+              <button class="button-value" onclick="filterProduct('Watch')">
+                Watch
+              </button> -->
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">30% off</span>
-                    <img src="photos/im3.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Watercolor</h2>
-                    <p class="product-short-des">High Quality Watercolors</p>
-                    <span class="price">$70</span><span class="actual-price">$100</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">10% off</span>
-                    <img src="photos/im4.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Thin AI</h2>
-                    <p class="product-short-des">Thin layered writings</p>
-                    <span class="price">$10</span><span class="actual-price">$11</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">90% off</span>
-                    <img src="photos/im5.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Acrylic Paint</h2>
-                    <p class="product-short-des">Quick dry mechanism</p>
-                    <span class="price">$12</span><span class="actual-price">$120</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">40% off</span>
-                    <img src="photos/im6.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Hard Brush</h2>
-                    <p class="product-short-des">Can be used for walls too</p>
-                    <span class="price">$18</span><span class="actual-price">$30</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div id="products"></div>
+          </div>
+          <!-- Script -->
+          <!-- <script src="search.js"></script> -->
      <script src="nav.js"></script>
      <script src="footer.js"></script>
  </body>
+ </html>
