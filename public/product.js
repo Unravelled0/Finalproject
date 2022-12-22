@@ -21,3 +21,4 @@ quantityBtns.forEach((item, i) => {
         checkedBtn = i; 
     })
 })
+

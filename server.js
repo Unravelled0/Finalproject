@@ -23,6 +23,10 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(staticPath,"index.html"));
 });
 
+app.get("/product",(req,res)=>{
+    res.sendFile(path.join(staticPath,"product.html"));
+});
+
 app.get("/login",(req, res)=>{
     res.sendFile(path.join(staticPath, "login.html"));
 });
